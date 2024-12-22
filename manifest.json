@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Exporter",
+  "version": "1.0",
+  "description": "Export Chrome bookmarks to a CSV file.",
+  "permissions": [
+    "bookmarks",       // Access bookmarks API
+    "downloads"        // Allow downloading the CSV file
+  ],
+  "action": {
+    "default_popup": "popup.html",  // Popup interface
+    "default_title": "Export Bookmarks"
+  },
+  "background": {
+    "service_worker": "background.js"  // Background script for handling logic
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
